@@ -1,0 +1,67 @@
+/* Clean canvas container layout resets */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* The actual gameplay canvas view box */
+canvas {
+    background-color: #2c2c2c;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+    border: 2px solid #333333;
+    border-radius: 6px;
+}
+
+/* Floating HUD panel for controls and speedometers */
+#ui-panel {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    pointer-events: none; /* Prevents clicking on the text from blocking keyboard input */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(20, 20, 20, 0.6) 100%);
+    padding: 18px 25px;
+    border-radius: 8px;
+    border-left: 5px solid #ff3333;
+    backdrop-filter: blur(4px); /* Sleek modern frosted-glass effect */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+h2 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f3f3f3;
+}
+
+p {
+    margin: 4px 0;
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+/* Emphasized keys or parameters */
+b {
+    color: #ff4d4d;
+    background-color: rgba(255,255,255,0.1);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* Dynamic live stats like the speedometer values */
+.highlight {
+    font-weight: bold;
+    color: #00ffcc; /* Bright arcade cyan */
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.4);
+}
