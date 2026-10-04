@@ -1,5 +1,5 @@
 # PixelLeague
-Open source blocky Rocket League HTML game.
+Open source blocky Rocket League styled HTML game.
 
 ## How 2 Play 
 Head over to [Pixel League](https://google.com) and start playing!
